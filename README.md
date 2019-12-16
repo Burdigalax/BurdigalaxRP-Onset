@@ -1,6 +1,4 @@
-Readme 
-
-#Burdigalax RP - Shop Exemple 
+# Burdigalax RP - Shop Exemple 
 
 ### Download only module :
 [Download IHM](http://rom444.free.fr/onShop/burdigalax-shop.zip) 
