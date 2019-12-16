@@ -26,7 +26,6 @@ function CloseUI()
     Delay(100, function()
     	SetWebVisibility(shop, WEB_HIDDEN)
     end)
-
 end
 AddEvent("OnClose", CloseUI)
 
@@ -40,7 +39,7 @@ function OpenUI()
 end
 
 function OnKeyPress(key)
-	if key == "G" then
+	if key == "B" then
         local visibility = GetWebVisibility(shop)
         if visibility == WEB_HIDDEN then
            OpenUI()
