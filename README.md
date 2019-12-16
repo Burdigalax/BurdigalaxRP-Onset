@@ -3,6 +3,10 @@
 ### Download only module :
 [Download IHM](http://rom444.free.fr/onShop/burdigalax-shop.zip) 
 
+### Presentation
+
+[![Vidéo de présentation](https://img.youtube.com/vi/UWvTUOvN394/0.jpg)](https://www.youtube.com/watch?v=UWvTUOvN394)
+
 ### Live Demo
 
 Full readme and live demo of exemple usage shop module on : http://rom444.free.fr/onShop/ 
