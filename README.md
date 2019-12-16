@@ -1,5 +1,7 @@
 # Burdigalax RP - Shop Exemple 
 
+**Warning :** This repo is exemple of usage IHM. This code missing server implementation with database.
+
 ### Download only module :
 [Download IHM](http://rom444.free.fr/onShop/burdigalax-shop.zip) 
 
