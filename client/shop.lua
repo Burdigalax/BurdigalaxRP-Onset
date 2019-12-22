@@ -5,7 +5,8 @@ function OnPackageStart()
 	--ZOrder = 5 and FrameRate = 10
 	shop = CreateWebUI(width / 4.7, height / 4.7, 540, -1050, 5, 10)
 	--shop = CreateWebUI(850.0, 400.0, 800.0, 650.0, 5, 10)
-    LoadWebFile(shop, "http://asset/"..GetPackageName().."/client/gui/onShop.html")
+	AddPlayerChat('package name :'..GetPackageName().." !");
+    LoadWebFile(shop, "http://asset/"..GetPackageName().."/client/gui/old/onShop.html")
 	SetWebAlignment(shop, 0.0, 0.0)
 	SetWebAnchors(shop, 0.0, 0.0, 1.0, 1.0)
 	SetWebVisibility(shop, WEB_HIDDEN)
@@ -27,7 +28,7 @@ function CloseUI()
     	SetWebVisibility(shop, WEB_HIDDEN)
     end)
 end
-AddEvent("OnClose", CloseUI)
+AddEvent("BURDIGALAX_onShop_onClose", CloseUI)
 
 function OpenUI()
     ExecuteWebJS(shop, "SetConfig()")
@@ -60,4 +61,4 @@ function OnPayment(event)
        ExecuteWebJS(shop, "SetError()")
     end
 end
-AddEvent('OnPayment', OnPayment)
+AddEvent('BURDIGALAX_onShop_OnPayment', OnPayment)
