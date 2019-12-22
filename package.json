@@ -7,9 +7,10 @@
     "utils/json.lua"
   ],
   "files": [
-    "client/gui/old/index.js",
-    "client/gui/old/frozen-vendors-burdigalax.js",
-    "client/gui/old/onShop-burdigalax.js",
-    "client/gui/old/onShop.html"
+    "client/gui/onShop/index.js",
+    "client/gui/onShop/vendors.burdigalax.js",
+    "client/gui/onShop/commons.burdigalax.js",
+    "client/gui/onShop/onShop.burdigalax.js",
+    "client/gui/onShop/onShop.html"
   ]
 }

@@ -6,7 +6,7 @@ function OnPackageStart()
 	shop = CreateWebUI(width / 4.7, height / 4.7, 540, -1050, 5, 10)
 	--shop = CreateWebUI(850.0, 400.0, 800.0, 650.0, 5, 10)
 	AddPlayerChat('package name :'..GetPackageName().." !");
-    LoadWebFile(shop, "http://asset/"..GetPackageName().."/client/gui/old/onShop.html")
+    LoadWebFile(shop, "http://asset/"..GetPackageName().."/client/gui/onShop/onShop.html")
 	SetWebAlignment(shop, 0.0, 0.0)
 	SetWebAnchors(shop, 0.0, 0.0, 1.0, 1.0)
 	SetWebVisibility(shop, WEB_HIDDEN)
@@ -56,9 +56,10 @@ function OnPayment(event)
     local test = json.decode(event)
     if test.type == "cash" then
        ExecuteWebJS(shop, "SetSuccess()")
-    end
-    if test.type == "card" then
+    else
        ExecuteWebJS(shop, "SetError()")
     end
 end
-AddEvent('BURDIGALAX_onShop_OnPayment', OnPayment)
+AddEvent('BURDIGALAX_onShop_onContactLessPayment', OnPayment)
+AddEvent('BURDIGALAX_onShop_onCashPayment', OnPayment)
+AddEvent('BURDIGALAX_onShop_onCardPayment', OnPayment)
