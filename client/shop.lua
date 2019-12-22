@@ -60,4 +60,5 @@ function OnPayment(event)
        ExecuteWebJS(shop, "SetError()")
     end
 end
-AddEvent('OnPayment', OnPayment)
+AddEvent('BURDIGALAX_onShop_onCardPayment', OnPayment)
+AddEvent('BURDIGALAX_onShop_onContactLessPayment', OnPayment)
