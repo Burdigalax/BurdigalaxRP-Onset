@@ -1,15 +1,16 @@
 {
   "author": "Burdigalax",
-  "version": "1.0",
+  "version": "3.0.0",
   "server_scripts": [],
   "client_scripts": [
     "client/shop.lua",
     "utils/json.lua"
   ],
   "files": [
-    "client/gui/frozen-vendors-burdigalax.js",
-    "client/gui/onShop-burdigalax.js",
-    "client/gui/onShop.html",
-    "client/gui/index.js"
+    "client/gui/onShop/index.js",
+    "client/gui/onShop/vendors.burdigalax.js",
+    "client/gui/onShop/commons.burdigalax.js",
+    "client/gui/onShop/onShop.burdigalax.js",
+    "client/gui/onShop/onShop.html"
   ]
 }
