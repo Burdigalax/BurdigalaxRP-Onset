@@ -1,16 +1,21 @@
 {
   "author": "Burdigalax",
   "version": "3.0.0",
-  "server_scripts": [],
+  "server_scripts": [
+  ],
   "client_scripts": [
     "client/shop.lua",
+    "client/gasStation.lua",
     "utils/json.lua"
   ],
   "files": [
     "client/gui/onShop/index.js",
-    "client/gui/onShop/vendors.burdigalax.js",
-    "client/gui/onShop/commons.burdigalax.js",
-    "client/gui/onShop/onShop.burdigalax.js",
-    "client/gui/onShop/onShop.html"
+    "client/gui/gasStation/index.js",
+    "client/gui/vendors.burdigalax.js",
+    "client/gui/commons.burdigalax.js",
+    "client/gui/onShop.burdigalax.js",
+    "client/gui/onShop.html",
+    "client/gui/gasStation.burdigalax.js",
+    "client/gui/gasStation.html"
   ]
 }
