@@ -5,8 +5,8 @@ function OnPackageStart()
 	--ZOrder = 5 and FrameRate = 10
 	shop = CreateWebUI(width / 4.7, height / 4.7, 540, -1050, 5, 10)
 	--shop = CreateWebUI(850.0, 400.0, 800.0, 650.0, 5, 10)
-	AddPlayerChat('package name :'..GetPackageName().." !");
-    LoadWebFile(shop, "http://asset/"..GetPackageName().."/client/gui/onShop/onShop.html")
+	AddPlayerChat('package name :'..GetPackageName().." Shop !");
+    LoadWebFile(shop, "http://asset/"..GetPackageName().."/client/gui/onShop.html")
 	SetWebAlignment(shop, 0.0, 0.0)
 	SetWebAnchors(shop, 0.0, 0.0, 1.0, 1.0)
 	SetWebVisibility(shop, WEB_HIDDEN)

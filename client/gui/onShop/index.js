@@ -225,12 +225,12 @@ function SetConfig() {
 }
 
 function SetError() {
-  window.BURDIGALAX_onShop.setPaymentError(
-    "Erreur",
-    "Le système bancaire est KO !"
-  );
+  window.BURDIGALAX_onShop.setPaymentError({
+        title: "Erreur",
+        message: "Le système bancaire est KO !"
+      });
 }
 
 function SetSuccess() {
-  window.BURDIGALAX_onShop.setPaymentSuccess("Félicitation", "Paiement validé");
+  window.BURDIGALAX_onShop.setPaymentSuccess({title: "Félicitation", message:"Paiement validé"});
 }
