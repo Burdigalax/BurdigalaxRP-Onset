@@ -22,7 +22,7 @@
 -- SOFTWARE.
 --
 
-json = { _version = "0.1.2" }
+local json = { _version = "0.1.2" }
 
 -------------------------------------------------------------------------------
 -- Encode
@@ -55,6 +55,19 @@ local function encode_nil(val)
   return "null"
 end
 
+function dump(o)
+  if type(o) == 'table' then
+    local s = '{ '
+    for k,v in pairs(o) do
+       if type(k) ~= 'number' then k = '"'..k..'"' end
+       s = s .. ''..k..' = ' .. dump(v) .. ', '
+    end
+    return s .. '} '
+  else
+    return '"' .. tostring(o) .. '"'
+  end
+end
+
 
 local function encode_table(val, stack)
   local res = {}
@@ -65,7 +78,9 @@ local function encode_table(val, stack)
 
   stack[val] = true
 
-  if rawget(val, 1) ~= nil or next(val) == nil then
+  -- rawget disabled by Talos because it's unsafe -> http://lua-users.org/wiki/SandBoxes
+  -- if rawget(val, 1) ~= nil or next(val) == nil then
+  if val[1] ~= nil or next(val) == nil then
     -- Treat as array -- check keys are valid and it is not sparse
     local n = 0
     for k in pairs(val) do
@@ -131,7 +146,7 @@ encode = function(val, stack)
 end
 
 
-function json.encode(val)
+function json_encode(val)
   return ( encode(val) )
 end
 
@@ -384,7 +399,7 @@ parse = function(str, idx)
 end
 
 
-function json.decode(str)
+function json_decode(str)
   if type(str) ~= "string" then
     error("expected argument of type string, got " .. type(str))
   end

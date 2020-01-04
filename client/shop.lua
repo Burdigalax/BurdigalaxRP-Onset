@@ -53,7 +53,7 @@ end
 AddEvent("OnKeyPress", OnKeyPress)
 
 function OnPayment(event)
-    local test = json.decode(event)
+    local test = json_decode(event)
     if test.type == "cash" then
        ExecuteWebJS(shop, "SetSuccess()")
     else
