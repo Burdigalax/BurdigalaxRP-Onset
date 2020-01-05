@@ -1,5 +1,15 @@
 function SetConfigInventory(key) {
     window.BURDIGALAX_inventory.setConfig({
+        "config":{
+            "startMainInventoryPosition": {
+                "top": 440,
+                "left": 300
+            },
+            "startTransferInventoryPosition": {
+                "top": 440,
+                "left": 800
+            }
+        },
         "mainInventoryId": 1,
         "items": [
             {

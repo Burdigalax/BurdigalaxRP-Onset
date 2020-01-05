@@ -3,7 +3,7 @@ local inventory
 function OnPackageStartInventory()
 	local width, height = GetScreenSize()
 	--ZOrder = 5 and FrameRate = 10
-	inventory = CreateWebUI(width / 4.7, height / 4.7, 540, -1050, 5, 10)
+	inventory = CreateWebUI(0, 0, 0, 0, 10, 30)
 	AddPlayerChat('package name :'..GetPackageName().." Inventory !");
     LoadWebFile(inventory, "http://asset/"..GetPackageName().."/client/gui/inventory.html")
 	SetWebAlignment(inventory, 0.0, 0.0)
