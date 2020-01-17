@@ -1,4 +1,4 @@
-# Burdigalax RP - GUI v4.4.1
+# Burdigalax RP - GUI v4.4.2
 
 **Warning :** This repo is exemple of usage IHM. This code missing server implementation with database.
 
