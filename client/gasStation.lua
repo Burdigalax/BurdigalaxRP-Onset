@@ -34,7 +34,9 @@ function OpenUIGasStation()
     SetIgnoreMoveInput(true)
     ShowMouseCursor(true)
     SetInputMode(INPUT_GAMEANDUI)
-    SetWebVisibility(gasStation, WEB_VISIBLE)
+    Delay(300, function()
+        SetWebVisibility(gasStation, WEB_VISIBLE)
+    end)
 end
 
 function OnKeyPressGasStation(key)
